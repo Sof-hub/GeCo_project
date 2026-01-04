@@ -69,9 +69,6 @@ Lactobacillaceae-Comparative-Genomics/
 │ └── Mauve_Newick_tree.py # Phylogenetic tree
 │
 └── results/ # Output files
-├── tables/ # TSV results
-└── figures/ # PNG figures (300 dpi)
-
 ```
 
 ---
