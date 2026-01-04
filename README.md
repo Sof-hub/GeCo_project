@@ -47,9 +47,6 @@ This repository contains the complete analysis pipeline, data, and results for a
 ```text
 GeCo_project/
 ├── README.md # This file
-├── LICENSE # MIT License
-├── requirements.txt # Python dependencies
-├── CHANGELOG.md # Version history
 │
 ├── data/ # Input genomic data
 │ ├── 1_GCF_019575995.1/ # A. kunkeei
@@ -66,6 +63,7 @@ GeCo_project/
 ├── scripts/ # Analysis scripts
 │ ├── Organism_selection.py # Genome selection
 │ ├── GeCo_analysis_v2.py # Main pipeline
+│ ├── cog_map.py # Facultative colored COGs in DNA sequence with palette
 │ └── Mauve_Newick_tree.py # Phylogenetic tree
 │
 └── results/ # Output files
