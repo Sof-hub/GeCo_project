@@ -17,7 +17,6 @@
 - [Methodology](#methodology)
 - [Troubleshooting](#troubleshooting)
 - [Citation](#citation)
-- [Contributing](#contributing)
 - [Contact](#contact)
 
 ---
@@ -25,6 +24,7 @@
 ## Overview
 
 This repository contains the complete analysis pipeline, data, and results for a comparative genomic study of five _Lactobacillaceae_ species associated with honeybees:
+
 - **_Apilactobacillus kunkeei_** (GCF_019575995.1)
 - **_Apilactobacillus bombintestini_** (GCF_003627035.1)
 - **_Apilactobacillus apinorum_** (GCF_946888465.1)
@@ -44,10 +44,10 @@ This repository contains the complete analysis pipeline, data, and results for a
 
 ## Repository Structure
 
-```
+```text
 Lactobacillaceae-Comparative-Genomics/
 ├── README.md # This file
-├── LICENSE
+├── LICENSE # MIT License
 ├── requirements.txt # Python dependencies
 ├── CHANGELOG.md # Version history
 │
@@ -68,7 +68,10 @@ Lactobacillaceae-Comparative-Genomics/
 │ ├── GeCo_analysis_v2.py # Main pipeline
 │ └── Mauve_Newick_tree.py # Phylogenetic tree
 │
-└── results/ # Output files    
+└── results/ # Output files
+├── tables/ # TSV results
+└── figures/ # PNG figures (300 dpi)
+
 ```
 
 ---
@@ -176,29 +179,30 @@ genomes = {
 ```
 
 Individual Scripts
+
 1. Genome Selection
 
-```bash
-python Organism_selection.py
-```
+    ```bash
+    python Organism_selection.py
+    ```
 
-Output: genomes_selected.tsv
+    Output: genomes_selected.tsv
 
 2. Main Analysis Pipeline
 
-```bash
-python GeCo_analysis_v2.py
-```
+    ```bash
+    python GeCo_analysis_v2.py
+    ```
 
-Output: TSV tables + PNG figures
+    Output: TSV tables + PNG figures
 
 3. Phylogenetic Tree
 
-```bash
-python Mauve_Newick_tree.py
-```
+    ```bash
+    python Mauve_Newick_tree.py
+    ```
 
-Output: Phylogenetic_tree_Mauve.png
+    Output: Phylogenetic_tree_Mauve.png
 
 ## Analyses Performed
 
@@ -333,11 +337,11 @@ How to Interpret Results
 
 4. CAI Values
 
-```text
-Reference (A. kunkeei) = 1.000
-CAI > 1.05 → Better translational optimization
-CAI < 0.95 → Lower optimization
-```
+    ```text
+    Reference (A. kunkeei) = 1.000
+    CAI > 1.05 → Better translational optimization
+    CAI < 0.95 → Lower optimization
+    ```
 
     Results:
     Bombilactobacillus (1.17-1.20) > Apilactobacillus (0.94-1.00)
@@ -381,7 +385,7 @@ Bombilactobacillus: 0.309-0.327 (greater divergence)
 
 Validation:
 
-Mauve tree ≈ OrthoVenn tree → Robust signal 
+Mauve tree ≈ OrthoVenn tree → Robust signal
 
 ## Methodology
 
@@ -552,7 +556,7 @@ Common Issues
     import matplotlib.pyplot as plt
     ```
 
-## Getting Help
+### Getting Help
 
 - GitHub Issues: Open an issue
 
@@ -568,9 +572,9 @@ Common Issues
 
 - Input file formats
 
-## Advanced Usage
+### Advanced Usage
 
-### Custom Genome Analysis
+#### Custom Genome Analysis
 
 To analyze your own genomes:
 
@@ -588,7 +592,7 @@ genomes = {
 }
 ```
 
-### Batch Processing
+#### Batch Processing
 
 Process multiple genome sets:
 
@@ -603,7 +607,7 @@ for dataset in dataset1 dataset2 dataset3; do
 done
 ```
 
-### Integration with Other Tools
+#### Integration with Other Tools
 
 Export to R for statistical analysis
 
@@ -623,7 +627,7 @@ data <- read.csv("for_R_analysis.csv")
 cor.test(data$Genome_size_bp, data$GC_coding)
 ```
 
-## Reproducibility Checklist
+#### Reproducibility Checklist
 
 - All dependencies installed (see requirements.txt)
 - Python version 3.8+ verified
@@ -656,26 +660,26 @@ This Work:
 }
 ```
 
-## Key References
+### Key References
 
-### Bee Microbiome
+#### Bee Microbiome
 
 - Ellegaard & Engel (2019). Genomic diversity landscape of the honey bee gut microbiota. Nat Commun 10:446.
 - Bradford et al. (2022). Comparative genomics of lactobacillaceae from honeybees. Environ Microbiol 24:5841-5854.
 
-### Genome Analysis Methods
+#### Genome Analysis Methods
 
 - Lobry & Sueoka (2002). Asymmetric directional mutation pressures in bacteria. Genome Biol 3:research0058.
 - Sharp & Li (1987). The codon adaptation index. Nucleic Acids Res 15:1281-1295.
 
-### Software Tools
+#### Software Tools
 
 - Cantalapiedra et al. (2021). eggNOG-mapper v2. Mol Biol Evol 38:5825-5829.
 - Cabanettes & Klopp (2018). D-GENIES: dot plot large genomes. PeerJ 6:e4958.
 - Darling et al. (2010). progressiveMauve. PLoS ONE 5:e11147.
 - Xu et al. (2019). OrthoVenn2. Nucleic Acids Res 47:W52-W58.
 
-## Contact & Support
+## Contact
 
 ### Author
 
@@ -684,22 +688,21 @@ Master 2 Structural Biology and Genomics
 Parcours: Génomique et Analyse Bio-informatique de Données
 Aix-Marseille Université, France
 
-Email: sofia.quinteros@etu.univ-amu.fr
+Email: <sofia.quinteros@etu.univ-amu.fr>
 
-🔗 GitHub: @sofia-quinteros
-🔗 LinkedIn: Sofia Quinteros
+🔗 GitHub: [@sofia-quinteros](https://github.com/Sof-hub)
 
-## Supervisor
+### Supervisor
 
 Dr. Emmanuel Talla
 Course: Comparative Genomics (GeCo 2025)
 Aix-Marseille Université
 
-## Acknowledgments
+### Acknowledgments
 
 This work was conducted as part of the Master 2 Structural Biology and Genomics program, Comparative Genomics Course (GeCo 2025), under the supervision of Dr. Emmanuel Talla.
 
-### Special Thanks:
+#### Special Thanks
 
 NCBI RefSeq - High-quality genome assemblies
 
@@ -719,13 +722,13 @@ Aix-Marseille Université - Academic support
 
 ### Data Sources
 
-NCBI RefSeq: https://www.ncbi.nlm.nih.gov/refseq/
+NCBI RefSeq: [https://www.ncbi.nlm.nih.gov/refseq/](https://www.ncbi.nlm.nih.gov/refseq/)
 
-eggNOG 5.0: http://eggnog5.embl.de/
+eggNOG 5.0: [http://eggnog5.embl.de/](http://eggnog5.embl.de/)
 
-COG Database: https://www.ncbi.nlm.nih.gov/research/cog
+COG Database: [https://www.ncbi.nlm.nih.gov/research/cog](https://www.ncbi.nlm.nih.gov/research/cog)
 
-## Related Resources
+### Related Resources
 
 Similar Projects:
 
