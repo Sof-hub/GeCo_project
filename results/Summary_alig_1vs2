@@ -1,0 +1,32 @@
+Number of Contigs:	1
+Number reference replicons:	1
+Number of assembly bases:	1289211
+Number of reference bases:	1542216
+Number of LCBs:	24
+Number of Blocks:	4
+Breakpoint Distance:	4
+DCJ Distance:	2
+SCJ Distance:	8
+Number of Complete Coding Sequences:	0
+Number of Broken Coding Sequences:	0
+Number of SNPs:	246371
+Number of Gaps in Reference:	2764
+Number of Gaps in Assembly:	2735
+Total bases missed in reference:	464109
+Percent bases missed:	30,0936 %
+Total bases extra in assembly:	194452
+Percent bases extra:	15,083 %
+Number of missing chromosomes:	0
+Number of extra contigs:	0
+Number of Shared Boundaries:	1
+Number of Inter-LCB Boundaries:	0
+Contig N50:	1289211
+Contig N90:	1289211
+Min contig length:	1289211
+Max contig length:	1289211
+Substitutions (Ref on Y, Assembly on X):
+	A	C	T	G
+A	-	12146	30617	23937
+C	13127	-	37551	5700
+T	30276	23679	-	12458
+G	37661	5735	13484	-

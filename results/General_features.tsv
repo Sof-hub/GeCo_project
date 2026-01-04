@@ -1,0 +1,6 @@
+Organism	Genome_size(bp)	GC_coding(%)	Predicted_CDS	Coding_density(%)	Mean_CDS_length(bp)	Max_CDS_length(bp)	tRNA	rRNA	Proteins_predicted_function	Proteins_with_COG
+Apilactobacillus kunkeei	1542216	36.56	1343	29.35016884794348	337.0387192851824	8342	64	15	1181	1216
+Apilactobacillus bombintestini	1289211	34.1	1159	29.21864613317758	325.0129421915444	5476	61	15	1036	1064
+Apilactobacillus apinorum	1463863	34.73	1329	29.364496541001447	323.44319036869825	8293	62	15	1136	1170
+Bombilactobacillus folatiphilus	1637944	38.38	1506	28.74286300386338	312.6108897742364	2412	58	12	1254	1290
+Bombilactobacillus thymidiniphilus	1494436	36.42	1412	29.20787507795583	309.1310198300283	2816	58	12	1131	1169
