@@ -47,7 +47,7 @@ This repository contains the complete analysis pipeline, data, and results for a
 ```
 Lactobacillaceae-Comparative-Genomics/
 ├── README.md # This file
-├── LICENSE # MIT License
+├── LICENSE
 ├── requirements.txt # Python dependencies
 ├── CHANGELOG.md # Version history
 │
@@ -68,10 +68,7 @@ Lactobacillaceae-Comparative-Genomics/
 │ ├── GeCo_analysis_v2.py # Main pipeline
 │ └── Mauve_Newick_tree.py # Phylogenetic tree
 │
-└── results/ # Output files
-├── tables/ # TSV results
-└── figures/ # PNG figures (300 dpi)
-
+└── results/ # Output files    
 ```
 
 ---
