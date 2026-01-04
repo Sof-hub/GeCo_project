@@ -1,4 +1,4 @@
-# Comparative Genomics of Bee-Associated Lactobacillaceae
+# Comparative Genomics of Bee-Associated **Lactobacillaceae**
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![BioPython](https://img.shields.io/badge/BioPython-1.79+-green.svg)](https://biopython.org/)
