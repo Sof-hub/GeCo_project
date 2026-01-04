@@ -45,7 +45,7 @@ This repository contains the complete analysis pipeline, data, and results for a
 ## Repository Structure
 
 ```text
-Lactobacillaceae-Comparative-Genomics/
+GeCo_project/
 ├── README.md # This file
 ├── LICENSE # MIT License
 ├── requirements.txt # Python dependencies
